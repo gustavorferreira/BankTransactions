@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j3DkvGsRkSee+5M9Dtd+RH1M9zJ+1MZmgz7UrjMYOrPjuQaQcCINzEfnN5NtLAgvaSSJbX66kw7gNwLIWIhg4g==",
+  "dgSpecHash": "ZQnWzXj4IIWilSNxGu2Gv7QsCVFkIO88WD8++alAW9ybhwHaDKy72JGpfNGxyjHgW2NPXR5oXYz4FaR8HRCtUQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Studying\\BankTransactions\\BankTransactions\\BankTransactions.csproj",
+  "projectFilePath": "C:\\Projects\\Studying\\BankTransactions\\src\\BankTransactions\\BankTransactions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

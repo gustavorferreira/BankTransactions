@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Studying\\BankTransactions\\BankTransactions\\BankTransactions.csproj",
+      "projectUniqueName": "C:\\Projects\\Studying\\BankTransactions\\src\\BankTransactions\\BankTransactions.csproj",
       "projectName": "BankTransactions",
-      "projectPath": "C:\\Projects\\Studying\\BankTransactions\\BankTransactions\\BankTransactions.csproj",
+      "projectPath": "C:\\Projects\\Studying\\BankTransactions\\src\\BankTransactions\\BankTransactions.csproj",
       "packagesPath": "C:\\Users\\gustavo.ferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Studying\\BankTransactions\\BankTransactions\\obj\\",
+      "outputPath": "C:\\Projects\\Studying\\BankTransactions\\src\\BankTransactions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gustavo.ferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
