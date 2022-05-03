@@ -47,7 +47,7 @@ namespace BankTransactions.Controllers
         // GET: Transaction/Create
         public IActionResult Create()
         {
-            return View();
+            return View(new TransactionModel());
         }
 
         // POST: Transaction/Create
