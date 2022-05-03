@@ -55,10 +55,11 @@ namespace BankTransactions.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TransactId,AccountNumber,BeneficiaryName,BankName,SwiftCode,Ammount,Date")] TransactionModel transactionModel)
+        public async Task<IActionResult> Create([Bind("TransactId,AccountNumber,BeneficiaryName,BankName,SwiftCode,Amount,Date")] TransactionModel transactionModel)
         {
             if (ModelState.IsValid)
             {
+                transactionModel.Date = DateTime.Now;
                 _context.Add(transactionModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -87,7 +88,7 @@ namespace BankTransactions.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("TransactId,AccountNumber,BeneficiaryName,BankName,SwiftCode,Ammount,Date")] TransactionModel transactionModel)
+        public async Task<IActionResult> Edit(int id, [Bind("TransactId,AccountNumber,BeneficiaryName,BankName,SwiftCode,Amount,Date")] TransactionModel transactionModel)
         {
             if (id != transactionModel.TransactId)
             {
