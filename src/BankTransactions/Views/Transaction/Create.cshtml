@@ -1,15 +1,12 @@
 ﻿@model BankTransactions.Models.TransactionModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Transaction";
 }
 
-<h1>Create</h1>
-
-<h4>TransactionModel</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 offset-3">
+        <h1>Transaction</h1>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -27,30 +24,35 @@
                 <input asp-for="BankName" class="form-control" />
                 <span asp-validation-for="BankName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="SwiftCode" class="control-label"></label>
-                <input asp-for="SwiftCode" class="form-control" />
-                <span asp-validation-for="SwiftCode" class="text-danger"></span>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="SwiftCode" class="control-label"></label>
+                        <input asp-for="SwiftCode" class="form-control" />
+                        <span asp-validation-for="SwiftCode" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Ammount" class="control-label"></label>
+                        <input asp-for="Ammount" class="form-control" />
+                        <span asp-validation-for="Ammount" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Ammount" class="control-label"></label>
-                <input asp-for="Ammount" class="form-control" />
-                <span asp-validation-for="Ammount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Date" class="control-label"></label>
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary w-100" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary w-100">View All</a>
+                </div>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
