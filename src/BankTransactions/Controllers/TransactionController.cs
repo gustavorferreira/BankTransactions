@@ -45,9 +45,16 @@ namespace BankTransactions.Controllers
         }
 
         // GET: Transaction/Create
-        public IActionResult Create()
+        public IActionResult Create(int id = 0)
         {
-            return View(new TransactionModel());
+            if (id == 0)
+            {
+                return View(new TransactionModel());
+            }
+            else
+            {
+                return View(_context.Transactions.Find(id));
+            }
         }
 
         // POST: Transaction/Create
