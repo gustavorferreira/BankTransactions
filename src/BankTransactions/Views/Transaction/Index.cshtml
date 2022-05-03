@@ -4,11 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+    </div>
+</div>
+
+<h1>PassBook</h1>
+
 <table class="table">
     <thead>
         <tr>
@@ -19,18 +22,16 @@
                 @Html.DisplayNameFor(model => model.BeneficiaryName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BankName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SwiftCode)
+                @Html.DisplayNameFor(model => model.Date)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Amount)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Date)
+                <a asp-action="Create" class="btn btn-sm btn-success">
+                    <i class="fa-solid fa-plus"></i> New
+                </a>
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -43,21 +44,20 @@
                 @Html.DisplayFor(modelItem => item.BeneficiaryName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BankName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SwiftCode)
+                @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Amount)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.TransactId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TransactId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TransactId">Delete</a>
+                <div class="btn-group btn-group-sm">
+                    <a asp-action="Edit" asp-route-id="@item.TransactId" class="btn btn-warning">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@item.TransactId" class="btn btn-danger">
+                        <i class="fa-solid fa-trash-alt"></i>
+                    </a>
+                </div>
             </td>
         </tr>
 }
