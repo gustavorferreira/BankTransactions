@@ -38,6 +38,7 @@ Pré requisitos para executar o projeto:
 - Configure seu banco de dados local em `appsettings.json`
 
 
+  
 No terminal do NuGet execute os comandos abaixo:
 - Crie a migration com o comando `Add-Migration "Initial Create"`
 - Crie o banco de dados com `Update-Database"`
