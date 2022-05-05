@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-    <a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/48185499/150372342-47c64427-71a3-4c97-8681-03ba9dd1206d.gif" </a></p>
+    <a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/48185499/166991026-f3c813e1-bff3-4e66-b55e-f1178efa6e3b.gif" </a></p>
 
 ## ✨ Tecnologias
 
