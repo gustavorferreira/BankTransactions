@@ -35,11 +35,13 @@ Pré requisitos para executar o projeto:
 - Servidor Web
 - Banco de dados Microsoft SQL Server
 
+
+- Configure seu banco de dados local em `appsettings.json`
+
 No terminal do NuGet execute os comandos abaixo:
 - Crie a migration com o comando `Add-Migration "Initial Create"`
 - Crie o banco de dados com `Update-Database"`
 
-- Configure seu banco de dados local em `appsettings.json`
 - Inicie o servidor `CTRL + F5`
 - Agora você pode acessar [`http://localhost:5117/`](http://localhost:5117/) do seu navegador.
 - Campos obrigatórios:
