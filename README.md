@@ -1,4 +1,4 @@
-﻿<h1 align="center">Sistema de cadastro via API com .NET Core e EF Core | Clean Code and SOLID</h1>
+<h1 align="center">Sistema de cadastro via API com .NET Core e EF Core | Clean Code and SOLID</h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-    <a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/48185499/166991026-f3c813e1-bff3-4e66-b55e-f1178efa6e3b.gif" </a></p>
+    <img src="https://user-images.githubusercontent.com/48185499/166993847-25cb4b0b-d7c2-4cca-a3bc-979b16f4983e.gif"</p>
 
 ## ✨ Tecnologias
 
@@ -35,9 +35,10 @@ Pré requisitos para executar o projeto:
 - Servidor Web
 - Banco de dados Microsoft SQL Server
 
-
 - Configure seu banco de dados local em `appsettings.json`
 
+
+  
 No terminal do NuGet execute os comandos abaixo:
 - Crie a migration com o comando `Add-Migration "Initial Create"`
 - Crie o banco de dados com `Update-Database"`
