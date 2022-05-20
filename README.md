@@ -41,7 +41,7 @@ Pré requisitos para executar o projeto:
   
 No terminal do NuGet execute os comandos abaixo:
 - Crie a migration com o comando `Add-Migration "Initial Create"`
-- Crie o banco de dados com `Update-Database"`
+- Crie o banco de dados com `Update-Database`
 
 - Inicie o servidor `CTRL + F5`
 - Agora você pode acessar [`http://localhost:5117/`](http://localhost:5117/) do seu navegador.
